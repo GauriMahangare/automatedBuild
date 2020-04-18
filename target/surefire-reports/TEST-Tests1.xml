@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Tests1" time="0.021" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Tests1" time="0.053" tests="8" errors="0" skipped="0" failures="3">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="GB"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\gauri\AppData\Local\Temp\surefire3300692282863983163\surefirebooter3577982291264657262.jar C:\Users\gauri\AppData\Local\Temp\surefire3300692282863983163 2020-04-18T16-25-36_738-jvmRun1 surefire893092401978223350tmp surefire_05969302318794652395tmp"/>
+    <property name="sun.java.command" value="C:\Users\gauri\AppData\Local\Temp\surefire1082169055831686574\surefirebooter998093693584529354.jar C:\Users\gauri\AppData\Local\Temp\surefire1082169055831686574 2020-04-18T22-03-26_897-jvmRun1 surefire3558244846029502618tmp surefire_01846208792435314201tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\gauri\IdeaProjects\ConitousBuild\ContinousBuild\target\test-classes;C:\Users\gauri\IdeaProjects\ConitousBuild\ContinousBuild\target\classes;C:\Users\gauri\.m2\repository\org\junit\platform\junit-platform-launcher\1.6.2\junit-platform-launcher-1.6.2.jar;C:\Users\gauri\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\gauri\.m2\repository\org\junit\platform\junit-platform-engine\1.6.2\junit-platform-engine-1.6.2.jar;C:\Users\gauri\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\gauri\.m2\repository\org\junit\platform\junit-platform-commons\1.6.2\junit-platform-commons-1.6.2.jar;C:\Users\gauri\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.2\junit-jupiter-engine-5.6.2.jar;C:\Users\gauri\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.2\junit-jupiter-api-5.6.2.jar;C:\Users\gauri\.m2\repository\org\junit\vintage\junit-vintage-engine\5.6.2\junit-vintage-engine-5.6.2.jar;C:\Users\gauri\.m2\repository\junit\junit\4.13\junit-4.13.jar;C:\Users\gauri\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\gauri"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\gauri\AppData\Local\Temp\surefire3300692282863983163\surefirebooter3577982291264657262.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\gauri\AppData\Local\Temp\surefire1082169055831686574\surefirebooter998093693584529354.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_241\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,8 +61,30 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="test1" classname="Tests1" time="0.015"/>
+  <testcase name="test1" classname="Tests1" time="0.038">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at Tests1.test1(Tests1.java:12)
+</failure>
+    <system-out><![CDATA[executing test1
+]]></system-out>
+  </testcase>
   <testcase name="test2" classname="Tests1" time="0"/>
   <testcase name="test3" classname="Tests1" time="0.001"/>
   <testcase name="test4" classname="Tests1" time="0.001"/>
+  <testcase name="test5" classname="Tests1" time="0.001"/>
+  <testcase name="test6" classname="Tests1" time="0.001">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at Tests1.test6(Tests1.java:33)
+</failure>
+    <system-out><![CDATA[executing test6
+]]></system-out>
+  </testcase>
+  <testcase name="test7" classname="Tests1" time="0"/>
+  <testcase name="test8" classname="Tests1" time="0.001">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at Tests1.test8(Tests1.java:42)
+</failure>
+    <system-out><![CDATA[executing test8
+]]></system-out>
+  </testcase>
 </testsuite>

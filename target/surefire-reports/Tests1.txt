@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: Tests1
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in Tests1
+Tests run: 8, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.053 s <<< FAILURE! - in Tests1
+test1  Time elapsed: 0.038 s  <<< FAILURE!
+java.lang.AssertionError
+	at Tests1.test1(Tests1.java:12)
+
+test6  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at Tests1.test6(Tests1.java:33)
+
+test8  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at Tests1.test8(Tests1.java:42)
+
